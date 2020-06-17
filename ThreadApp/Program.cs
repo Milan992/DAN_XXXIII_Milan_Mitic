@@ -9,11 +9,13 @@ namespace ThreadApp
     {
         static void Main(string[] args)
         {
+            //clear text files
             File.WriteAllText(@"..\..\FileByThread_1.txt", "");
             File.WriteAllText(@"..\..\FileByThread_22.txt", "");
 
             Thread[] threadArray = new Thread[4];
 
+            //create threads
             for (int i = 1; i <= 4; i++)
             {
                 Thread t = new Thread(() => Method());
@@ -52,29 +54,26 @@ namespace ThreadApp
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// Method runs differently depending on a thread name
+        /// </summary>
         public static void Method()
         {
             if (Thread.CurrentThread.Name == "THREAD_1")
             {
                 int[,] matrix = new int[100, 100];
-
-                for (int i = 0; i < matrix.GetLength(0); i++)
+                using (TextWriter tw = new StreamWriter(@"..\..\FileByThread_1.txt"))
                 {
-                    matrix[i, i] = 1;
-                }
-                for (int i = 0; i < matrix.GetLength(0); i++)
-                {
-                    try
+                    for (int i = 0; i < 100; ++i)
                     {
-                        File.AppendAllText(@"..\..\FileByThread_1.txt", "\n");
-                        for (int j = 0; j < matrix.GetLength(0); j++)
+                        for (int j = 0; j < 100; ++j)
                         {
-                            File.AppendAllText(@"..\..\FileByThread_1.txt", Convert.ToString(matrix[i, j]));
+                            if (i == j)
+                                matrix[i, j] = 1;
+
+                            tw.Write(matrix[i, j]);
                         }
-                    }
-                    catch
-                    {
-                        continue;
+                        tw.WriteLine();
                     }
                 }
             }
