@@ -12,3 +12,10 @@ C:\Milan\dnevni zadaci\DAN_XXXIII_Milan_Mitic\ThreadApp\obj\Debug\ThreadApp.cspr
 C:\Milan\dnevni zadaci\DAN_XXXIII_Milan_Mitic\ThreadApp\obj\Debug\ThreadApp.csproj.CoreCompileInputs.cache
 C:\Milan\dnevni zadaci\DAN_XXXIII_Milan_Mitic\ThreadApp\obj\Debug\ThreadApp.exe
 C:\Milan\dnevni zadaci\DAN_XXXIII_Milan_Mitic\ThreadApp\obj\Debug\ThreadApp.pdb
+C:\Users\panonit\Desktop\DAN_XXXIII_Milan_Mitic\ThreadApp\bin\Debug\ThreadApp.exe.config
+C:\Users\panonit\Desktop\DAN_XXXIII_Milan_Mitic\ThreadApp\bin\Debug\ThreadApp.exe
+C:\Users\panonit\Desktop\DAN_XXXIII_Milan_Mitic\ThreadApp\bin\Debug\ThreadApp.pdb
+C:\Users\panonit\Desktop\DAN_XXXIII_Milan_Mitic\ThreadApp\obj\Debug\ThreadApp.csprojAssemblyReference.cache
+C:\Users\panonit\Desktop\DAN_XXXIII_Milan_Mitic\ThreadApp\obj\Debug\ThreadApp.csproj.CoreCompileInputs.cache
+C:\Users\panonit\Desktop\DAN_XXXIII_Milan_Mitic\ThreadApp\obj\Debug\ThreadApp.exe
+C:\Users\panonit\Desktop\DAN_XXXIII_Milan_Mitic\ThreadApp\obj\Debug\ThreadApp.pdb
